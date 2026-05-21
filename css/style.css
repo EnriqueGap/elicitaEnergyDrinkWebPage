@@ -1032,6 +1032,16 @@ a.more {
   border-color: rgba(255, 255, 255, 0.12);
 }
 
+.footer-section .footer-logo-wrap + p {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-section .custom-social {
+  padding-left: 0;
+}
+
 .thankyou-icon:before {
   background: rgba(183, 255, 0, 0.18);
 }
