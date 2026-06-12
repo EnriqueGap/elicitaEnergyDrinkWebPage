@@ -1167,3 +1167,107 @@ a.more {
 .thankyou-icon:before {
   background: rgba(183, 255, 0, 0.18);
 }
+
+.blog-section .post-entry .read-more {
+  display: inline-flex;
+  margin-top: 12px;
+  color: var(--fuel-lime);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
+.blog-entries-section {
+  padding: 0 0 7rem 0;
+  background: linear-gradient(180deg, #f6f7f0 0%, #ffffff 100%);
+}
+
+.blog-entry-full {
+  scroll-margin-top: 110px;
+  padding: 46px 0;
+  border-top: 1px solid rgba(6, 7, 10, 0.1);
+}
+
+.blog-entry-full:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.blog-entry-full:nth-child(even) .row {
+  flex-direction: row-reverse;
+}
+
+.blog-entry-media {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 24px 54px rgba(6, 7, 10, 0.2);
+}
+
+.blog-entry-tag {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 14px;
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: rgba(183, 255, 0, 0.2);
+  color: var(--fuel-black);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.blog-entry-body h2 {
+  color: var(--fuel-black);
+  font-family: var(--fuel-display);
+  font-size: clamp(34px, 5vw, 58px);
+  font-weight: 900;
+  line-height: .95;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.blog-entry-body .lead {
+  color: var(--fuel-black);
+  font-weight: 800;
+}
+
+.blog-entry-body p {
+  color: rgba(6, 7, 10, 0.72);
+}
+
+.blog-entry-benefits {
+  display: grid;
+  gap: 10px;
+  margin: 24px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.blog-entry-benefits li {
+  position: relative;
+  padding-left: 24px;
+  color: var(--fuel-black);
+  font-weight: 700;
+}
+
+.blog-entry-benefits li:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: .65em;
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  background: linear-gradient(135deg, var(--fuel-lime), var(--fuel-cyan));
+  box-shadow: 0 0 12px rgba(183, 255, 0, 0.45);
+}
+
+@media (max-width: 991.98px) {
+  .blog-entry-full:nth-child(even) .row {
+    flex-direction: column;
+  }
+}
